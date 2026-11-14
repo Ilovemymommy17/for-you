@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8caeff" />
+    <title>Candle Blow</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="candle-count-display">
+      Candles on the Cake: <span id="candleCount">0</span>
+    </div>
+
+    <div class="audio-controls">
+      <button id="micButton" type="button">Enable microphone</button>
+      <p id="micStatus" role="status" aria-live="polite">
+        “Enable microphone”, allow access, then blow. Tap the cake to add candles.
+      </p>
+    </div>
+
+    <div class="cake" aria-label="Birthday cake; tap to add candles">
+      <div class="plate"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top"></div>
+      <div class="icing"></div>
+      <div class="drip drip1"></div>
+      <div class="drip drip2"></div>
+      <div class="drip drip3"></div>
+    </div>
+
+    <div id="birthday-wish" style="display: none; text-align: center; margin-top: 50px">
+      <h1 style="color: #ff4d6d; font-size: 50px">🎂 Happy Birthday! 🎂</h1>
+      <p style="font-size: 20px"> </p>
+    </div>
+
+    <div id="birthday-message" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="birthday-title">
+      <h1 id="birthday-title">Happy Birthday! ✨</h1>
+      <p>Wishing you all the best, is just small gift Come telegram......</p>
+      <button id="closeBirthdayMessage" type="button">Continue</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
